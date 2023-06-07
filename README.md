@@ -6,21 +6,25 @@ yum update -y  #CentOS
 yum install -y curl  #CentOS
 
 第三步   先安装1    后安装2 （每次安装完重启一次服务器）  重装 
-Trojan Panel面板 --1--mysql
+Trojan Panel面板 --1--mysql 
+```
 source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)
-
+```
 这是另外一种面板
 trojan面板（这个面板是最简单的）
+```
 source <(curl -sL https://git.io/trojan-install)
-
+```
 第四步     
 bbr加速  --
+```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh 
-
+```
 第3.9步
 warp（解锁奈非+GPT）   先解锁
+```
 wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh
-
+```
 
 
 解锁顺序是1.1.3       解锁成功了 的标志（会出现美国...）成功后--装BBR
